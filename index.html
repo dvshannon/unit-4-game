@@ -7,64 +7,62 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
+	
 	
 </head>
 <body>
 	<h1>The Crystal Collector Game</h1>
 
 	<div class="container">
-		<p>At the beginning of every game you will be given a random number.</p>
-		<p>There are four crystals below. By clicking in a crystal you will add a specific amount of points to your total score.</p>
-		<p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
-		<p>The value of each crystal is hidden from you unitl you click on it.</p>
-		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			<div>At the beginning of every game you will be given a random number.</div>
+			<div>There are four crystals below. By clicking in a crystal you will add a sdivecific amount of divoints to your total score.</div>
+			<div>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</div>
+			<div>The value of each crystal is hidden from you unitl you click on it.</div>
+			<div>Each time when the game starts, the game will change the values of each crystal.</div>
 	</div>
+	<div class="game">
+		<div id="target">
 
-	<div id="target">
-		<img src="assets/images/boss-rock.jpg" alt="boss rock">
-		<p>Try to reach: </p>
+			
+		</div>
 		
-	</div>
-	<div id="win-lose">
-		<div class="scoreboard">
-			<p id='wins'></p><p>:</p><p id='losses'></p>
+		<div id="win-lose">
+			<div class="scoreboard">
+				<p id='wins'></p><p>:</p><p id='losses'></p>
+			</div>
+			<div id="user">
+				<p>user</p>
+			</div>
+			<div id="comp">
+				<p>comp</p>
+			</div>
 		</div>
-		<div id="user">
-			<p>user</p>
+
+		<div id="crystals">
+			<button id="round-blue">
+				<img src="assets/images/blue-round.jpg" alt="blue-round">
+				<div id="round-num"></div>
+			</button>
+			<button id="square-blue">
+				<img src="assets/images/blue-square.jpeg" alt="blue-square">
+				<div id="square-num"></div>
+			</button>
+			<button id="purple">
+				<img src="assets/images/purple.jpg" alt="purple">
+				<div id="purple-num"></div>
+			</button>
+			<button id="ruby">
+				<img src="assets/images/ruby.jpg" alt="ruby">
+				<div id="ruby-num"></div>
+			</button>
 		</div>
-		<div id="comp">
-			<p>comp</p>
-		</div>
-	</div>
 
-	<div id="crystals">
-		<button id="round-blue">
-			<img src="assets/images/blue-round.jpg" alt="blue-round" value='0'>
-		</button>
-		<button id="square-blue">
-			<img src="assets/images/blue-square.jpeg" alt="blue-square" value='1'>
-		</button>
-		<button id="purple">
-			<img src="assets/images/purple.jpg" alt="purple" value='2'>
-		</button>
-		<button id="ruby">
-			<img src="assets/images/ruby.jpg" alt="ruby" value='3'>
-		</button>
-	</div>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
 
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
+		<p>&nbsp;</p>
 
-	<p>&nbsp;</p>
-
-	<p>&nbsp;</p>
-
-
-	<div id="score">
+		<p>&nbsp;</p>
 
 	</div>
 
@@ -80,7 +78,10 @@
 
 
 
-	
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
 	<script src="assets/javascript/game.js"></script>
 </body>
 </html>
